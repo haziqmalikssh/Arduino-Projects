@@ -17,5 +17,5 @@ void loop() {
     Serial.println("Tilt switch is open (upright)");
   }
 
-  delay(200); // Small delay for stability
+  delay(200); 
 }
