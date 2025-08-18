@@ -32,6 +32,7 @@ long measureDistance() {
   return distanceCm;
 }
 
+//set up the the pin and serieal monitor
 void setup() {
   Serial.begin(9600);
   pinMode(TRIG_PIN, OUTPUT);
@@ -40,7 +41,7 @@ void setup() {
   Serial.println("Ultrasonic Sensor Module Initialized...");
   Serial.println("Measuring distance in cm:\n");
 }
-
+//loops through the measuring method and conditions
 void loop() {
   long distance = measureDistance();
 
