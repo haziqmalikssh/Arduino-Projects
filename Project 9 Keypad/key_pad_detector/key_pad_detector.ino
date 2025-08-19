@@ -1,8 +1,8 @@
 #include <Keypad.h>
 
 // Define keypad size
-const byte ROWS = 4; // 4 rows
-const byte COLS = 4; // 4 columns
+const byte ROWS = 4; 
+const byte COLS = 4; 
 
 // Define the symbols on the buttons of the keypads
 char keys[ROWS][COLS] = {
