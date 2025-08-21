@@ -4,7 +4,7 @@ const int pinY = A1;   // Joystick Y-axis (VERT)
 const int pinSW = 2;   // Joystick button (SEL)
 
 void setup() {
-  // Initialize serial monitor
+  //start serial monitor
   Serial.begin(9600);
 
   // Configure joystick button pin
