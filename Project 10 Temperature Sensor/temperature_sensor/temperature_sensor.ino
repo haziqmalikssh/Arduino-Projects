@@ -1,13 +1,13 @@
 #include "DHT.h"
 
-// pins
+
 #define DHTPIN 2        // Digital pin connected to DHT11 DATA
 #define DHTTYPE DHT11   // Define sensor type
 
-// object
+
 DHT dht(DHTPIN, DHTTYPE);
 
-// setup
+
 void setup() {
   Serial.begin(9600);
   Serial.println("Initializing DHT11 Sensor...");
@@ -16,7 +16,6 @@ void setup() {
   delay(2000);  // Give sensor time to stabilize
 }
 
-// main loop
 void loop() {
   // Read humidity and temperature
   float humidity = dht.readHumidity();
@@ -35,7 +34,7 @@ void loop() {
 
   delay(2000); // Read every 2 seconds
 }
-
+//print statements
 void printSensorData(float humidity, float tempC, float tempF) {
   Serial.println("------ DHT11 Sensor Data ------");
   Serial.print("Humidity: ");
