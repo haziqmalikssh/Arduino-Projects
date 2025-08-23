@@ -29,5 +29,5 @@ void loop() {
     Serial.println("Status: High Water");
   }
 
-  delay(1000);  // Delay 1 second before next reading
+  delay(1000);  
 }
