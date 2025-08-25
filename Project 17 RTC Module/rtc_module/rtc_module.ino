@@ -21,7 +21,7 @@ void setup() {
 
 void loop() {
   DateTime now = rtc.now();
-
+//printing the time corresponding to rtc
   Serial.print(now.year(), DEC);
   Serial.print('/');
   Serial.print(now.month(), DEC);
