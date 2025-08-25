@@ -1,5 +1,5 @@
 // Relay pin connected to Arduino
-int relayPin = 7;  // Use the pin you wired to relay input
+int relayPin = 7; 
 
 void setup() {
   pinMode(relayPin, OUTPUT); // Set relay pin as output
