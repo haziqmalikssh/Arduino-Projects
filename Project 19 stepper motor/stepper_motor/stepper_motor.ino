@@ -14,7 +14,7 @@ Stepper stepper(STEPS_PER_REV, IN1, IN3, IN2, IN4);
 
 void setup() {
   // Set stepper speed (RPM)
-  stepper.setSpeed(10);  // You can change speed as needed
+  stepper.setSpeed(10);  
 }
 
 void loop() {
