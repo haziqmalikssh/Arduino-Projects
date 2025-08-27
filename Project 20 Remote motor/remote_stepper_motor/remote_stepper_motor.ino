@@ -40,7 +40,7 @@ void loop() {
     }
     else if (key == 0xFFE21D) { // Stop button
       Serial.println("Stop");
-      // Just don’t send steps -> stepper holds
+      
     }
 
     irrecv.resume(); // Receive next value
