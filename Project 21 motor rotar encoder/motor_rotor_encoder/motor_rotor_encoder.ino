@@ -45,7 +45,7 @@ void loop() {
   }
 
   if (motorEnabled) {
-    stepper.moveTo(encoderValue); // Move stepper based on encoder
+    stepper.moveTo(encoderValue); //Move stepper based on encoder
     stepper.run();
   }
 }
@@ -55,7 +55,7 @@ void updateEncoder() {
   int MSB = digitalRead(CLK); // Most Significant Bit
   int LSB = digitalRead(DT);  // Least Significant Bit
 
-  int encoded = (MSB << 1) | LSB; // Converting the 2 pin value to a single number
+  int encoded = (MSB << 1) | LSB; //Converting the 2 pin value to a single number
   int sum = (lastEncoded << 2) | encoded;
 
   if (sum == 0b1101 || sum == 0b0100 || sum == 0b0010 || sum == 0b1011)
