@@ -3,7 +3,6 @@
 
 // GPS module TX -> Arduino pin 4
 // GPS module RX -> Arduino pin 3
-// Remember: Cross TX/RX
 static const int RXPin = 4, TXPin = 3;
 static const uint32_t GPSBaud = 9600;
 
