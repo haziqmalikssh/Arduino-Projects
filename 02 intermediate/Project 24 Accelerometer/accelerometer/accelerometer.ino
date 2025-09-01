@@ -26,7 +26,7 @@ void loop() {
 
   // Read accelerometer and gyroscope values
   mpu.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
-
+//print out the statements relating to coordinates
   Serial.print("Accel (X/Y/Z): ");
   Serial.print(ax); Serial.print(" / ");
   Serial.print(ay); Serial.print(" / ");
