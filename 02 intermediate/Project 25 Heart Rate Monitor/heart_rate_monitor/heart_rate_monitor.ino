@@ -28,8 +28,7 @@ void loop() {
   } else {
     // Read analog ECG value
     int ecgValue = analogRead(ecgPin);
-    Serial.println(ecgValue); // Open Tools > Serial Plotter to see waveform
+    Serial.println(ecgValue); 
   }
 
-  delay(1); // Adjust sampling rate (lower for smoother plot)
-}
+  delay(1); 
