@@ -1,4 +1,4 @@
-int buzzerPin = 8;
+int buzzerPin = 28;
 
 // Notes frequencies (in Hz)
 int noteC = 262;
