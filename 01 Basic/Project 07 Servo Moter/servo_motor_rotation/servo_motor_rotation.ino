@@ -2,7 +2,7 @@
 
 Servo myServo;   // Create servo object
 
-int servoPin = 9;  // Pin where the servo is connected
+int servoPin = 28;  // Pin where the servo is connected
 
 void setup() {
   myServo.attach(servoPin);  // Attach servo to pin
