@@ -1,8 +1,8 @@
 #include <LedControl.h>
 
 // Pin configuration for Mega2560
-// DIN = 8, CLK = 10, CS = 9
-LedControl lc = LedControl(8, 10, 9, 1); // (DIN, CLK, CS, number of devices)
+// DIN = 12, CLK = 10, CS =11
+LedControl lc = LedControl(12, 10, 11, 1); // (DIN, CLK, CS, number of devices)
 
 void setup() {
   // Initialize the MAX7219
