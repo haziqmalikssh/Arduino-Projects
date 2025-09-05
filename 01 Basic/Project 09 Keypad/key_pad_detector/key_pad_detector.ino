@@ -2,7 +2,7 @@
 
 // Define keypad size
 const byte ROWS = 4; 
-const byte COLS = 4; 
+const byte COLS = 4;  
 
 // Define the symbols on the buttons of the keypads
 char keys[ROWS][COLS] = {
