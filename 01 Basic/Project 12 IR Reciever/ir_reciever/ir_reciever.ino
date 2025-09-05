@@ -36,7 +36,7 @@ void loop() {
     }
 
     // Handle key hold (repeat)
-    if (results.repeat) {
+    if (results.isRepeat) {
       Serial.println("Key is being held down...");
     }
 
