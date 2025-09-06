@@ -1,22 +1,27 @@
-const int pirPin = 10; // PIR sensor connected to digital pin 10
-const int ledPin = 13; // LED connected to digital pin 13
+int ledPin = 13;  // LED on Pin 13 of Arduino
+int pirPin = 7;   // Input for HC-S501 PIR sensor
+
+int pirValue;     // Variable to store PIR reading
 
 void setup() {
-  pinMode(pirPin, INPUT);    // Set PIR pin as input
-  pinMode(ledPin, OUTPUT);   // Set LED pin as output
-  Serial.begin(9600);        // Start serial communication
+  pinMode(ledPin, OUTPUT);   // LED pin as output
+  pinMode(pirPin, INPUT);    // PIR pin as input
+
+  digitalWrite(ledPin, LOW); // Make sure LED is off at start
+
+  Serial.begin(9600);        // Start Serial Monitor
+  Serial.println("PIR Sensor Test Started");
 }
 
 void loop() {
-  int pirState = digitalRead(pirPin); // Read PIR sensor state
-  
-  if (pirState == HIGH) {            // If motion is detected
-    digitalWrite(ledPin, HIGH);      // Turn LED on
-    Serial.println("Motion detected!");
+  pirValue = digitalRead(pirPin);  // Read PIR sensor
+  digitalWrite(ledPin, pirValue);  // Turn LED on/off based on PIR
+
+  if (pirValue == HIGH) {
+    Serial.println("Motion Detected!");
   } else {
-    digitalWrite(ledPin, LOW);       // Turn LED off
-    Serial.println("No motion");
+    Serial.println("No Motion");
   }
-  
-  delay(1000); // Delay 1 second between readings
+
+  delay(500); // Wait half a second before reading again
 }
