@@ -1,13 +1,13 @@
-# Arduino Active Buzzer Project
+# Arduino Tilt Switch Project
 
 ## Description
-A simple Arduino project that uses an active buzzer to generate sound.
+A simple Arduino project that demonstrates the use of a tilt switch. 
 
 ## Hardware Requirements
 - Arduino Uno (or compatible board)
-- Breadboard
 - Jumper wires
-- Active buzzer module
+-tilt switch module
+
 ## Software Setup
 1. Install the [Arduino IDE](https://www.arduino.cc/en/software).
 2. Select your board and port in Tools > Board and Tools > Port.
@@ -15,11 +15,11 @@ A simple Arduino project that uses an active buzzer to generate sound.
 
 ## Usage
 1. Wire the circuit as shown.
-2. Upload the sketch to your Arduino.
-3. The onboard LED (or external LED) will blink every second.
+2. Upload a sketch to your Arduino to test the pin (e.g., set it as an input or output).
+3. Use the wire to connect to other components or test circuits.
 
 ## Troubleshooting
-- LED not blinking? Check connections and resistor value.
+- No response? Check the wire connection and ensure the correct pin is selected.
 - Upload errors? Verify board/port selection.
 
 ## License
