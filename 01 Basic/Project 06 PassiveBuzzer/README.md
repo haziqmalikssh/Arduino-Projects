@@ -6,23 +6,20 @@ This repository contains example projects for using a passive buzzer with an Ard
 ## Hardware Requirements
 - Arduino Mega 2560
 - Passive buzzer module (e.g., KY-006)
-- Pushbutton (for button-controlled project)
-- 10kΩ resistor (for button-controlled project)
 - Jumper wires
-- Breadboard (optional)
+
 
 ## Software Requirements
 - Arduino IDE (latest version)
 
 ## Setup
-1. Connect the buzzer's positive pin to a PWM-capable pin (e.g., pin 9) and negative pin to GND.
+1. Connect the buzzer's positive pin to a PWM-capable pin and negative pin to GND.
 2. For button-controlled project, connect a pushbutton to a digital pin (e.g., pin 2) with a 10kΩ pull-down resistor to GND.
 3. Open the project code in the Arduino IDE, select Arduino Mega 2560, and upload.
 
 ## Projects
-- **Simple Tone Generator**: Plays a single 440 Hz tone.
-- **Playing a Melody**: Plays a sequence of notes (e.g., Twinkle Twinkle Little Star).
-- **Button-Controlled Buzzer**: Plays a tone when a button is pressed.
+- **Playing a Melody**: Plays a sequence of notes
+
 ## Installation
 1. Clone or download this repository.
 2. Open the `.ino` file for the desired project in the Arduino IDE.
