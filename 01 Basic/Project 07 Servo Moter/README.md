@@ -14,7 +14,7 @@ Hardware:
 Arduino Mega 2560
 Servo motor(s) (e.g., SG90 or similar)
 Jumper wires
-(Optional) External power supply for the servo (if required)
+External power supply for the servo of 5 volts
 
 
 Software:
