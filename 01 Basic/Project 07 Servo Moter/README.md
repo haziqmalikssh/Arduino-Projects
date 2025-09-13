@@ -1,4 +1,3 @@
-```markdown
 # Arduino Mega Servo Motor Project
 
 ## Overview
