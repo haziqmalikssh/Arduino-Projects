@@ -8,7 +8,7 @@ This project utilizes an Arduino Mega to interface with a temperature sensor, en
 - **Arduino Mega Compatibility**: Designed specifically for the Arduino Mega 2560.
 - **Simple Integration**: Easy-to-use code for quick setup and customization.
 - **Real-Time Monitoring**: Continuously reads and processes temperature data.
-- **Extensible**: Can be integrated with displays, serial monitors, or other output devices.
+
 
 ## Hardware Requirements
 - **Arduino Mega 2560**: The microcontroller board used for this project.
