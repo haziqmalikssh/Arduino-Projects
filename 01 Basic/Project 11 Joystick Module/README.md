@@ -7,7 +7,7 @@ This project demonstrates how to interface a joystick module with an Arduino Meg
 - Reads X and Y axis values from the joystick module.
 - Detects pushbutton presses.
 - Compatible with Arduino Mega.
-- Example code for processing joystick input and outputting data (e.g., via Serial Monitor).
+
 
 ## Hardware Requirements
 - Arduino Mega 2560
@@ -26,9 +26,9 @@ This project demonstrates how to interface a joystick module with an Arduino Meg
    - Typically, connect:
      - VCC to Arduino 5V
      - GND to Arduino GND
-     - VRX (X-axis) to an analog pin (e.g., A0)
-     - VRY (Y-axis) to an analog pin (e.g., A1)
-     - SW (button) to a digital pin (e.g., D2)
+     - VRX (X-axis) to an analog pin
+     - VRY (Y-axis) to an analog pin 
+     - SW (button) to a digital pin 
 
 2. **Upload the Code**:
    - Open the Arduino IDE.
