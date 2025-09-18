@@ -28,7 +28,7 @@ This project enables an Arduino Mega to receive and decode IR signals using an I
 4. Point an IR remote at the receiver and press buttons to test.
 
 ## Code Explanation
-The code in the repository uses an IR library (e.g., IRremote) to decode signals. It:
+The code in the repository uses an IR library to decode signals. It:
 - Initializes the IR receiver on a specified pin.
 - Listens for incoming IR signals.
 - Outputs the decoded values to the Serial Monitor.
@@ -43,7 +43,7 @@ The schematic in the repository illustrates the connections:
 ## Usage
 - After uploading the code, open the Serial Monitor (9600 baud) to see the decoded IR signals.
 - Press buttons on your IR remote to send signals to the receiver.
-- Use the decoded values to trigger actions in your project (e.g., controlling LEDs or motors).
+- Use the decoded values to trigger actions in your project.
 
 ## Contributing
 Contributions are welcome! Please:
