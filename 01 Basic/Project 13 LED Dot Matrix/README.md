@@ -13,10 +13,10 @@ This project demonstrates how to control an LED dot matrix display using an Ardu
   - Arduino Mega 2560
   - LED Dot Matrix Display (e.g., MAX7219-based module)
   - Jumper wires
-  - (Optional) Breadboard for prototyping
+
 - **Software**:
   - Arduino IDE (version 1.8.x or later)
-  - Required libraries (if applicable, e.g., `LedControl` for MAX7219 modules)
+  - Required libraries, `LedControl` for MAX7219 modules
 
 ## Installation
 1. Clone or download this repository.
