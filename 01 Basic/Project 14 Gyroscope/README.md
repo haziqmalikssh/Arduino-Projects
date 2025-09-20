@@ -20,7 +20,7 @@ Interfaces a gyroscope (e.g., MPU6050) with Arduino Mega to read angular velocit
 - Libraries: Wire (built-in), MPU6050 (via Library Manager).
 
 ## Setup
-1. **Wire**: VCC to 5V, GND to GND, SCL to pin 21, SDA to pin 20 (see `schematics/schematic.png`).
+1. **Wire**: VCC to 5V, GND to GND, for other pins (see `schematics.png`).
 2. **Libraries**: Install MPU6050 in Arduino IDE.
 3. **Upload**: Open `src/main.ino`, select Mega, upload.
 
@@ -28,7 +28,7 @@ Interfaces a gyroscope (e.g., MPU6050) with Arduino Mega to read angular velocit
 Power on, open Serial Monitor (9600 baud), tilt sensor to view gyro values (e.g., `Gyro X: 0.12 deg/s`).
 
 ## Schematics
-See `schematics/gyroscope_schematic.pdf` or `.png`.
+See `schematics/gyroscope_module_schematic.png`
 
 ## Code
 - `main.ino`: Core sketch.
