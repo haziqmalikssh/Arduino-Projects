@@ -5,7 +5,7 @@ This project demonstrates how to control an LED dot matrix display using an Ardu
 
 ## Features
 - Displays patterns, text, or animations on an LED dot matrix.
-- Compatible with common LED dot matrix modules (e.g., 8x8 or similar).
+- Compatible with common LED dot matrix modules.
 - Easy-to-modify code for custom patterns or animations.
 
 ## Requirements
