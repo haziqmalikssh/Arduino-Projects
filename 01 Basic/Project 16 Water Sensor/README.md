@@ -11,7 +11,6 @@ This project uses an Arduino Mega to monitor water levels or detect water presen
 - Arduino Mega 2560
 - Water sensor (analog or digital)
 - Jumper wires
-- Breadboard (optional)
 - USB cable for programming
 
 ## Setup Instructions
