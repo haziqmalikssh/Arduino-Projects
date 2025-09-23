@@ -7,7 +7,7 @@ This project demonstrates the use of a **Real-Time Clock (RTC) module** with an 
 - Display current time and date.
 - Set and update RTC module time.
 - Simple integration with Arduino Mega.
-- Example sketches provided in the repository.
+
 
 ## Hardware Required
 
