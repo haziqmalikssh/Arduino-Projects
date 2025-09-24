@@ -3,7 +3,7 @@
 Control multiple relays with an **Arduino Mega** using the included code and schematics.
 
 ## Features
-- Supports **up to 16 relays** (expandable).
+- Supports relays (expandable).
 - Simple ON/OFF control via digital pins.
 - Well-commented Arduino code for easy customization.
 - Includes wiring schematics.
@@ -12,7 +12,7 @@ Control multiple relays with an **Arduino Mega** using the included code and sch
 - Arduino Mega 2560  
 - Relay Module(s)  
 - Jumper Wires  
-- Power Supply (sized for your relays)
+- Power Supply 
 
 ## Setup
 1. Connect the relays to the pins shown in the schematic.
