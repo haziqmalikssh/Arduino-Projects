@@ -1,34 +1,18 @@
-/*
-   AD8232 ECG Heart Rate Monitor with Arduino
-   GND     -> GND
-   3.3V    -> 3.3V
-   OUTPUT  -> A0
-   LO+     -> 11
-   LO-     -> 10
-*/
-
-int ecgPin = A0;   // ECG analog output
-int loPlus = 11;   // Leads-off detection LO+
-int loMinus = 10;  // Leads-off detection LO-
+const int SENSOR_PIN = A0;  // Analog input for ECG signal
+const int LO_POS_PIN = 10;  // Leads-off detect +
+const int LO_NEG_PIN = 11;  // Leads-off detect -
 
 void setup() {
-  Serial.begin(9600);
-
-  pinMode(loPlus, INPUT);
-  pinMode(loMinus, INPUT);
-
-  Serial.println("AD8232 ECG Module Initialized...");
-  delay(2000);
+  Serial.begin(9600);       // Initialize serial communication at 9600 baud
+  pinMode(LO_POS_PIN, INPUT);
+  pinMode(LO_NEG_PIN, INPUT);
 }
 
 void loop() {
-  // Check for leads off
-  if ((digitalRead(loPlus) == 1) || (digitalRead(loMinus) == 1)) {
-    Serial.println("Leads off! Check electrode connection.");
+  if ((digitalRead(LO_POS_PIN) == 1) || (digitalRead(LO_NEG_PIN) == 1)) {
+    Serial.println('!');    // Leads are off
   } else {
-    // Read analog ECG value
-    int ecgValue = analogRead(ecgPin);
-    Serial.println(ecgValue); 
+    Serial.println(analogRead(SENSOR_PIN));  // Send raw ECG value
   }
-
-  delay(1); 
+  delay(1);                 // Delay for ~1000 Hz sampling
+}
