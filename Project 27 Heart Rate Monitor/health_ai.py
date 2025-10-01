@@ -4,8 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
-# Configure serial port (replace 'COM3' with your Arduino Mega's port)
-ser = serial.Serial('COM4', 9600, timeout=1)
+# Configure serial port (replace 'COM5' with your Arduino Mega's port)
+ser = serial.Serial('COM5', 9600, timeout=1)
 
 # Parameters
 num_samples = 10000  # ~10 seconds at 1000 Hz
@@ -61,7 +61,7 @@ if len(data) >= num_samples:
         data = np.array(data[:num_samples])  # Ensure exact number of samples
         working_data, measures = hp.process(data, sample_rate)
         bpm = measures['bpm']
-        print(f"Calculated heart rate: {bpm:.2f} BPM")
+        print(f"Calculated heart rate")
         if 60 <= bpm <= 100:
             print("Heart rate is at a healthy level.")
         else:
