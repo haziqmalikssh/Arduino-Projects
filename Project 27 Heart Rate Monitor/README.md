@@ -1,7 +1,7 @@
 # Project 27: Heart Rate Monitor
 
 ## Overview
-This project implements a heart rate monitor using an Arduino Mega and an AD8232 ECG module. The system collects ECG data, sends it over a serial connection, and processes it using a Python script (`health_ai.py`) to calculate the heart rate (BPM) and determine if it’s within a healthy range (60–100 BPM for resting adults). The Python script also displays a real-time ECG plot using Matplotlib.
+This project implements a heart rate monitor using an Arduino Mega using an AD8232 ECG module. The system collects ECG data, sends it over a serial connection, and processes it using a Python script (`health_ai.py`) to calculate the heart rate (BPM) and determine if it’s within a healthy range (60–100 BPM for resting adults). The Python script also displays a real-time ECG plot using Matplotlib.
 
 **Demo**: Watch a demonstration of the project on YouTube: [Heart Rate Monitor Demo](https://youtu.be/-T7qUnhZs14)
 
