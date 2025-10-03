@@ -21,7 +21,7 @@ The code (`gps_module.ino`) configures the Arduino Mega to:
 - Optional Serial Monitor output for GPS data
 
 ## Schematic
-The schematic (`gps_schematic.png`) illustrates the wiring between the Arduino Mega and the GPS module.
+The schematic (`gps_module_schematic.png`) illustrates the wiring between the Arduino Mega and the GPS module.
 
 ## Usage
 - Open the code in the Arduino IDE.
