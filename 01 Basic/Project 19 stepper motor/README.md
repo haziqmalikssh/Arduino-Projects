@@ -17,13 +17,13 @@ This project uses an Arduino Mega to control a stepper motor for precise motion 
 3. Ensure the motor and driver are powered by an appropriate external power supply.
 
 ## Code
-The code (`stepper_control.ino`) configures the Arduino Mega to control the stepper motor via the driver. It includes functions for:
+The code (`stepper_motor.ino`) configures the Arduino Mega to control the stepper motor via the driver. It includes functions for:
 - Setting motor speed and direction
 - Controlling steps or rotations
 - Optional microstepping (if supported by the driver)
 
 ## Schematic
-The schematic (`stepper_schematic.png`) illustrates the wiring between the Arduino Mega, stepper motor driver, and motor.
+The schematic (`stepper_motor_schematics.png`) illustrates the wiring between the Arduino Mega, stepper motor driver, and motor.
 
 ## Usage
 - Open the code in the Arduino IDE.
