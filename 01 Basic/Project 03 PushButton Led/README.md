@@ -21,7 +21,7 @@ This project demonstrates how to control an LED using a pushbutton with an Ardui
 ## Installation
 1. Assemble the hardware according to the circuit diagram.
 2. Open the Arduino IDE.
-3. Upload the provided sketch (`pushbutton_led.ino`) to the Arduino board.
+3. Upload the provided sketch (`pushbuttonDetectled.ino`) to the Arduino board.
 4. Ensure the correct board and port are selected in the IDE.
 
 ## Usage
