@@ -27,9 +27,9 @@ This project demonstrates how to control a servo motor using an Arduino Mega. Th
    ```
 2. **Open the Arduino Code**:
    - Navigate to the repository folder.
-   - Open the `.ino` file (e.g., `servo_control.ino`) in the Arduino IDE.
+   - Open the `.ino` file in the Arduino IDE.
 3. **Connect the Hardware**:
-   - Refer to the schematic in the repository (e.g., `schematic.png` or `schematic.pdf`) to connect the servo motor to the Arduino Mega.
+   - Refer to the schematic in the repository to connect the servo motor to the Arduino Mega.
    - Ensure proper wiring for power, ground, and signal lines.
    - **Note**: If using an external power supply for the servo, ensure the ground is shared with the Arduino.
 4. **Upload the Code**:
