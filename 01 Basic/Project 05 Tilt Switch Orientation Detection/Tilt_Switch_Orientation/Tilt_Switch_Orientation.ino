@@ -3,14 +3,14 @@ const int tiltPin = 3;
 
 void setup() {
   Serial.begin(9600);
-  pinMode(tiltPin, INPUT_PULLUP); // Use internal pull-up resistor
+  pinMode(tiltPin, INPUT_PULLUP); 
 }
 
 void loop() {
   int tiltState = digitalRead(tiltPin);
 
   if (tiltState == LOW) {
-    // Switch closed (tilted position)
+    // swith is in the closwer posistion
     Serial.println("Tilt switch is closed (tilted)");
   } else {
     // Switch in upright position
