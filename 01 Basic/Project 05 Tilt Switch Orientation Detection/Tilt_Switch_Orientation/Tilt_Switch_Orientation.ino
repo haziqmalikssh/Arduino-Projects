@@ -13,7 +13,7 @@ void loop() {
     // Switch closed (tilted position)
     Serial.println("Tilt switch is closed (tilted)");
   } else {
-    // Switch open (upright position)
+    // Switch in upright position
     Serial.println("Tilt switch is open (upright)");
   }
 
