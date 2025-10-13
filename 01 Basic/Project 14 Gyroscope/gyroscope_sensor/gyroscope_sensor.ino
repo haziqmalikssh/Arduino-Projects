@@ -4,6 +4,7 @@
 MPU6050 mpu;
 
 void setup() {
+  //set rate and serial monitor
   Serial.begin(9600);
   Wire.begin();
 
