@@ -11,7 +11,7 @@ void setup() {
   Serial.println("Initializing MPU6050...");
   mpu.initialize();
 
-  // Check if connected
+  // Check if connected to module
   if (mpu.testConnection()) {
     Serial.println("MPU6050 connection successful!");
   } else {
