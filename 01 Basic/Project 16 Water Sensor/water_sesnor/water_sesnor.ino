@@ -14,7 +14,7 @@ void loop() {
   // Read analog value from sensor (0 - 1023)
   waterLevelValue = analogRead(waterSensorPin);
 
-  // Print value to Serial Monitor
+  // Print value of water level to Serial Monitor
   Serial.print("Water Level Value: ");
   Serial.println(waterLevelValue);
 
