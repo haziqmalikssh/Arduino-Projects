@@ -18,7 +18,7 @@ void loop() {
   Serial.print("Water Level Value: ");
   Serial.println(waterLevelValue);
 
-  // Optional: categorize water level
+  //categorize water level based on measurement
   if (waterLevelValue < 200) {
     Serial.println("Status: Empty / Dry");
   } else if (waterLevelValue < 500) {
