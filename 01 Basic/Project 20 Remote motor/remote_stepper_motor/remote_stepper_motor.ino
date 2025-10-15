@@ -12,7 +12,7 @@
 const int stepsPerRevolution = 2048;  // Adjust according to your stepper
 Stepper myStepper(stepsPerRevolution, IN1, IN3, IN2, IN4);
 
-// IR setup
+// IR setup and results
 IRrecv irrecv(IR_RECEIVER_PIN);
 decode_results results;
 
