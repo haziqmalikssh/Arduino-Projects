@@ -17,7 +17,7 @@ IRrecv irrecv(IR_RECEIVER_PIN);
 decode_results results;
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(9600); //set baud rate
   irrecv.enableIRIn(); // Start IR receiver
   myStepper.setSpeed(10); // RPM speed of the stepper motor
   Serial.println("IR Remote Stepper Control Ready");
