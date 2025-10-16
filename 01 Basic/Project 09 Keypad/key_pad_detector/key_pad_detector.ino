@@ -18,7 +18,7 @@ byte rowPins[ROWS] = {9, 8, 7, 6}; // D9, D8, D7, D6
 // Connect keypad COL0, COL1, COL2, COL3 to Arduino pins
 byte colPins[COLS] = {5, 4, 3, 2}; // D5, D4, D3, D2
 
-// Create keypad object
+// Create keypad object that maps key input to rown pina and columns
 Keypad keypad = Keypad(makeKeymap(keys), rowPins, colPins, ROWS, COLS);
 
 void setup() {
