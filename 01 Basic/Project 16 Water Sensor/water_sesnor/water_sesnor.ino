@@ -14,11 +14,11 @@ void loop() {
   // Read analog value from sensor (0 - 1023)
   waterLevelValue = analogRead(waterSensorPin);
 
-  // Print value to Serial Monitor
+  // Print value of water level to Serial Monitor
   Serial.print("Water Level Value: ");
   Serial.println(waterLevelValue);
 
-  // Optional: categorize water level
+  //categorize water level based on measurement
   if (waterLevelValue < 200) {
     Serial.println("Status: Empty / Dry");
   } else if (waterLevelValue < 500) {

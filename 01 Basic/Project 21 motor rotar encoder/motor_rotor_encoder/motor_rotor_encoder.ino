@@ -11,7 +11,7 @@
 #define DT 3
 #define SW 4
 
-// Stepper setup: 4 pins -> FULL4WIRE mode
+// Stepper setup: 4 pins 
 AccelStepper stepper(AccelStepper::FULL4WIRE, IN1, IN3, IN2, IN4);
 
 volatile int lastEncoded = 0;

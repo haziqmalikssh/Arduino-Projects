@@ -4,13 +4,14 @@
 MPU6050 mpu;
 
 void setup() {
+  //set rate and serial monitor
   Serial.begin(9600);
   Wire.begin();
 
   Serial.println("Initializing MPU6050...");
   mpu.initialize();
 
-  // Check if connected
+  // Check if connected to module
   if (mpu.testConnection()) {
     Serial.println("MPU6050 connection successful!");
   } else {

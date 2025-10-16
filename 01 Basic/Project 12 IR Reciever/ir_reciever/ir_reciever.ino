@@ -18,16 +18,16 @@ void loop() {
 
     // Example: take action based on specific button codes
     switch (results.value) {
-      case 0xFFA25D:  // Example: Power button
+      case 0xFFA25D: 
         Serial.println("Power button pressed");
         break;
-      case 0xFFE21D:  // Example: Play/Pause
+      case 0xFFE21D: 
         Serial.println("Play/Pause button pressed");
         break;
-      case 0xFF629D:  // Example: Volume Up
+      case 0xFF629D:  
         Serial.println("Volume Up button pressed");
         break;
-      case 0xFFA857:  // Example: Volume Down
+      case 0xFFA857:  
         Serial.println("Volume Down button pressed");
         break;
       default:

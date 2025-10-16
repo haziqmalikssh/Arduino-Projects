@@ -12,12 +12,12 @@
 const int stepsPerRevolution = 2048;  // Adjust according to your stepper
 Stepper myStepper(stepsPerRevolution, IN1, IN3, IN2, IN4);
 
-// IR setup
+// IR setup and results
 IRrecv irrecv(IR_RECEIVER_PIN);
 decode_results results;
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(9600); //set baud rate
   irrecv.enableIRIn(); // Start IR receiver
   myStepper.setSpeed(10); // RPM speed of the stepper motor
   Serial.println("IR Remote Stepper Control Ready");
