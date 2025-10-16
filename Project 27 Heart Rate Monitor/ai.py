@@ -18,7 +18,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
 # ----- SETTINGS -----
-SERIAL_PORT = 'COM5'     # change to your Arduino port
+SERIAL_PORT = 'COM4'     # change to your Arduino port
 BAUD_RATE = 9600
 NUM_SAMPLES = 10000      # ~10s at 1000Hz
 PLOT_WINDOW = 1000
@@ -118,7 +118,7 @@ if len(df) >= MIN_SAMPLES_TO_TRAIN:
 
     acc = accuracy_score(y_test, preds)
     joblib.dump(model, MODEL_PATH)
-    print(f"✅ Model trained and saved ({MODEL_PATH}) with accuracy: {acc*100:.2f}%")
+    print(f"Model trained and saved ({MODEL_PATH}) with accuracy: {acc*100:.2f}%")
 else:
     print(f"\nCollected {len(df)} samples so far. Need {MIN_SAMPLES_TO_TRAIN} before training a model.")
 
@@ -136,7 +136,7 @@ if os.path.exists(MODEL_PATH):
     prediction = model.predict(X_new)[0]
     prob = model.predict_proba(X_new)[0][1]
     print("\n--- AI Classification ---")
-    print(f"Prediction: {'HEALTHY ❤️' if prediction == 1 else 'UNHEALTHY ⚠️'}")
+    print(f"Prediction: {'HEALTHY' if prediction == 1 else 'UNHEALTHY'}")
     print(f"Confidence: {prob*100:.1f}%")
 else:
     print("\nNo model yet. Collect more samples to train automatically!")
