@@ -22,7 +22,7 @@ void loop() {
   Serial.print(" | Digital: ");
   Serial.println(soundDetected);
 
-  // Control LED based on digital output
+  // Control LED based on input
   if (soundDetected == HIGH) {
     digitalWrite(ledPin, HIGH); // Turn on LED if sound detected
   } else {
