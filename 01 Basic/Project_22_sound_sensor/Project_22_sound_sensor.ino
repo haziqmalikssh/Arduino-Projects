@@ -13,7 +13,7 @@ void loop() {
   // Read analog value (sound level)
   int soundLevel = analogRead(soundAnalogPin);
   
-  // Read digital value (threshold trigger)
+  // Read digital value 
   int soundDetected = digitalRead(soundDigitalPin);
   
   // Print values to Serial Monitor
