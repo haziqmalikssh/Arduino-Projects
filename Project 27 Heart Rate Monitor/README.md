@@ -7,7 +7,7 @@ This project implements a heart rate monitor using an Arduino Mega using an AD82
 
 <!-- HTML embed for platforms that support it -->
 <p align="center">
-  <a href="https://youtu.be/96P55DM7WIA">
+  <a href="https://youtu.be/ZZXw2OCzU5c">
     <img src="https://img.youtube.com/vi/96P55DM7WIA/0.jpg" alt="Heart Rate Monitor Demo" width="560" height="315">
   </a>
 </p>
