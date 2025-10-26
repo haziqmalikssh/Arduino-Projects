@@ -3,7 +3,7 @@
 ## Overview
 This project implements a heart rate monitor using an Arduino Mega using an optical heart rate sensor module. The system collects data on the change in the reflection of the light waves, the Optical heart rate sensor module uses Photoplethysmography (PPG) to collect data, then sends it over a serial connection, and processes it using a Python script with numpy called (`healthFinal.py`) to determine if it’s within a healthy range (60–100 BPM for resting adults). The Python script also displays a real-time plot of the data using Matplotlib.
 
-**Demo**: Watch a demonstration of the project on YouTube: [Heart Rate Monitor Demo](https://youtu.be/-T7qUnhZs14)
+**Demo**: Watch a demonstration of the project on YouTube: [Heart Rate Monitor Demo](https://www.youtube.com/watch?v=ZZXw2OCzU5c)
 
 <!-- HTML embed for platforms that support it -->
 <p align="center">
