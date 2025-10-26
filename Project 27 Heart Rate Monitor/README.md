@@ -1,7 +1,7 @@
 # Project 27: Heart Rate Monitor
 
 ## Overview
-This project implements a heart rate monitor using an Arduino Mega using an AD8232 ECG module. The system collects ECG data, sends it over a serial connection, and processes it using a Python script (`health_ai.py`) to calculate the heart rate (BPM) and determine if it’s within a healthy range (60–100 BPM for resting adults). The Python script also displays a real-time ECG plot using Matplotlib.
+This project implements a heart rate monitor using an Arduino Mega using an optical heart rate sensor module. The system collects data on the change in the reflection of the light waves, the Optical heart rate sensor module uses Photoplethysmography (PPG) to collect data, then sends it over a serial connection, and processes it using a Python script with numpy called (`healthFinal.py`) to determine if it’s within a healthy range (60–100 BPM for resting adults). The Python script also displays a real-time plot of the data using Matplotlib.
 
 **Demo**: Watch a demonstration of the project on YouTube: [Heart Rate Monitor Demo](https://youtu.be/-T7qUnhZs14)
 
@@ -13,14 +13,13 @@ This project implements a heart rate monitor using an Arduino Mega using an AD82
 </p>
 
 ## Repository Contents
-- Arduino code for reading data from the AD8232 module.
-- Python script (`health_ai.py`) for processing ECG data and plotting.
+- Arduino code for reading data from the hear rate sensor module.
+- Python script (`healthFInal.py`) for processing data and plotting.
 - Schematics for wiring the AD8232 to the Arduino Mega.
 
 ## Requirements
 - **Hardware**:
   - Arduino Mega 2560
-  - AD8232 ECG module
   - USB cable for Arduino
   - ECG electrodes and leads
 - **Software**:
@@ -44,11 +43,9 @@ pip install pyserial heartpy numpy matplotlib "setuptools<81"
 ## Setup Instructions
 1. **Wire the AD8232 to the Arduino Mega**:
    - OUTPUT → A0
-   - LO+ → Pin 10
-   - LO- → Pin 11
-   - 3.3V → 3.3V
+   - 5V → 5V
    - GND → GND
-   - Attach ECG electrodes to the body (e.g., chest or arms) with good skin contact.
+   - Attach to the fingertip or other part of body
 
 2. **Upload Arduino Code**:
    - Open the Arduino code in the Arduino IDE.
@@ -79,15 +76,13 @@ pip install pyserial heartpy numpy matplotlib "setuptools<81"
    - Close the Arduino IDE’s Serial Monitor to free the serial port.
    - Run the script:
      ```bash
-     python health_ai.py
+     python healthFinal.py
      ```
    - The script displays a real-time ECG plot. After ~10 seconds, it prints the heart rate (BPM) and whether it’s healthy (60–100 BPM) to the console.
 
 ## Usage
 - The real-time ECG plot shows the raw signal (0–1023) from the AD8232.
-- After collecting ~10 seconds of data, the plot closes, and the console displays:
-  - Calculated heart rate (e.g., `Calculated heart rate: 75.23 BPM`).
-  - Health assessment (e.g., `Heart rate is at a healthy level.`).
+- After collecting ~10 seconds of data, the plot closes, and the console displays healthy or not
 - Ensure good electrode contact to avoid `!` (leads-off) signals, which may result in insufficient data.
 
 ## Troubleshooting
@@ -97,5 +92,5 @@ pip install pyserial heartpy numpy matplotlib "setuptools<81"
 - **Noisy Signal**: Adjust electrode placement for better skin contact.
 
 ## Notes
-- The heart rate analysis uses `heartpy`’s signal processing algorithms, not a machine learning model. Consult a medical professional for accurate health assessments.
+- The heart rate analysis uses `heartpy`’s signal processing algorithms, not a machine learning model. 
 - The `pkg_resources` deprecation warning from `heartpy` is harmless but can be suppressed by pinning `setuptools<81`.
